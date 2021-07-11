@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+       <h1 class="title-text">SPIL</h1>
+       <h1 class="title-text">TTER</h1>
+    </div>
+    <section class= "card">
+      <div class="card-left">
+        <div class="bill">
+          <label for="input-bill">Bill <span class="helper1">fdgfjdgffghfgf.</span> <span class="error1">Can't be Zero</span></label>
+          <input type="text" onblur="validateBill();" class="input-bill" placeholder="0.00">
+        </div>
+        <p class="select-tip">Select Tip %</p>
+        <div class="percents">
+          <div onmousedown="tipPercent(this);" class="percent">5%</div>
+          <div onclick="tipPercent(this);" class="percent">10%</div>
+          <div onclick="tipPercent(this);" class="percent">15%</div>
+          <div onclick="tipPercent(this);" class="percent">20%</div>
+          <div onclick="tipPercent(this);" class="percent">25%</div>
+          <input onblur="validateCustom();" class="custom" type="text" placeholder="Custom">
+        </div>
+        <div class="bill">
+          <label for="input-people"> Number of Persons <span class="helper2">........o</span><span class="error2">Can't be Zero</span></label>
+          <input type="text" onblur="validatePersons();" class="input-people" placeholder="0">
+        </div>
+      </div>
+      <div class="card-right">
+        <div class="block">
+          <div class="text">
+            <p class="text-line1">Tip Amount</p>
+            <p class="text-line2">/ person</p>
+          </div>
+          <p class="amountTip">$0.0</p>
+        </div>
+        <div class="block">
+          <div class="text">
+            <p class="text-line1">Total</p>
+            <p class="text-line2">/ person</p>
+          </div>
+          <p class="amountTotal">$0.0</p>
+        </div>
+        <div>
+          <input onclick="resetAll();" class="button" value="RESET" type="button">
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="javascript.js"></script>
+  
+</body>
+</html>

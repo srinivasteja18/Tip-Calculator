@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 5px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 2em 5em 4em 5em;
+    border-radius: 10px;
+    box-shadow: 0 0 1em rgba(0,0,0,0.3);
+}
+.card-right{
+    padding: 2rem 2rem;
+    background-color: hsl(183, 100%, 15%);
+    margin: 2rem;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.block{
+    display: flex;
+    margin: 0;
+    min-width: 100%;
+    justify-content: space-between;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.amountTip{
+    font-size: 2.5em;
+    margin-left: 2em;
+    font-weight: 700;
+    color: hsl(180, 66%, 41%);
+}
+.amountTotal{
+    font-size: 2.5em;
+    margin-left: 2em;
+    font-weight: 700;
+    color: hsl(180, 66%, 41%);
+}
+.text-line1{
+    margin:0;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.text-line2{
+    margin: 0;
+    padding: 0;
+    color: hsl(185, 10%, 50%);
+}
+.button{
+    background-color: hsl(180, 66%, 41%);
+    padding: 1em 6em;
+    border: 0;
+    color: hsl(187, 38%, 21%);
+    margin-top: 3em;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.card-left{
+    padding: 2em;
+}
+
+.bill{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.input-bill{
+    padding: .5rem;
+    text-align: right;
+    font-size: 1.5rem;
+    background-color: hsl(189, 41%, 97%);
+    font-weight: 700;
+    color: hsl(183, 40%, 29%);
+    background-image: url("images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 1em;
+    min-width: 100%;
+    border: 0;
+    font-family: 'Space Mono', monospace;
+}
+.input-people{
+    padding: .5rem;
+    text-align: right;
+    font-size: 1.5rem;
+    background-color: hsl(189, 41%, 97%);
+    font-weight: 700;
+    color: hsl(183, 40%, 29%);
+    background-image: url("images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 1em;
+    min-width: 100%;
+    border: 0;
+    font-family: 'Space Mono', monospace;
+}
+.percents{
+    display: grid;
+    grid-template-columns: repeat(3,7em);
+}
+
+.percent{
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    background-color: hsl(183, 91%, 13%);
+    color: white;
+    margin: .5rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.custom{
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 40%, 29%);
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Space Mono', monospace;
+    border: 0;
+    border-color: hsl(180, 66%, 41%);
+}
+label{
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+}
+.select-tip{
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+}
+.percent:hover{
+    background-color: hsl(180, 66%, 41%);
+}
+.title{
+    margin-top: 1em;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: hsl(185, 11%, 40%);
+}
+
+@media (max-width:760px)  {
+    .card{
+        flex-direction: column;
+    }
+    .percents{
+        grid-template-columns: repeat(2,9em);
+    }
+    .helper2{
+        font-size: .1em;
+    }
+    .helper1{
+        font-size: .7em;
+    }
+}
+
+.error1{
+    font-size: 16px;
+    color: red;
+    float: right;
+    visibility: collapse;
+}
+.error2{
+    font-size: 16px;
+    color: red;
+    float: right;
+    visibility: collapse;
+}
+.helper2{
+    visibility: hidden;
+}
+.helper1{
+    visibility: hidden;
+}
