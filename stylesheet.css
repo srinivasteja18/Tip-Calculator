@@ -130,7 +130,7 @@ body{
 }
 .percents{
     display: grid;
-    grid-template-columns: repeat(3,7em);
+    grid-template-columns: repeat(3,10em);
 }
 
 .percent{
