@@ -90,6 +90,8 @@ function resetAll(){
     tipInput.value="";
     billInput.value="";
     personsInput.value="";
+    tipAmount.innerHTML="0.00";
+    totalAmount.innerHTML="0.00";
     tips.forEach(tip=>{
         tip.style.backgroundColor = "hsl(183, 91%, 13%)";
     });
